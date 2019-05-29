@@ -1,0 +1,344 @@
+/*-----------------------------------------------------
+INDHOLDSFORTEGNELSE:
+
+1. Generel styling / header / burgermenu
+2. Login side
+3. Forside
+4. Afleveringer
+-----------------------------------------------------*/
+
+
+
+/*-----------------------------------------------------
+                    1. Generel styling
+-----------------------------------------------------*/
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/*------------------------ HEADER-------------------- */
+
+header {
+    background-color: #EA5045;
+    display: flex;
+    height: 6em;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+#header_right {
+    width: 10vw;
+    background: blue;
+
+}
+
+.logo {
+    display: flex;
+    flex-grow: 0.8;
+
+}
+
+.profil_ikon {
+    display: flex;
+
+}
+
+/*--------------------  BURGERMENU----------------------*/
+
+.hidden {
+    transform: translateX(100%);
+}
+
+#menu .sectionwrapper {
+    margin: 40px 15px 15px 15px;
+}
+
+#menuknap {
+    display: flex;
+    display: inline-block;
+    color: white;
+    right: 0vw;
+    position: fixed;
+    padding: 0.5rem;
+}
+
+nav a {
+    color: #F58E81;
+    font-family: 'Gibson';
+    font-size: 1.7em;
+    padding: 7px;
+    text-align: center;
+    background-color: #3F3140;
+}
+
+#menu a {
+    display: block;
+    /* This makes the menu vertical */
+}
+
+#menu {
+    list-style-type: none;
+    transition: transform .3s;
+    transform-origin: top left;
+    position: relative;
+}
+
+
+/*-----------------------------------------------------
+                    2. Login side
+-----------------------------------------------------*/
+
+.login {
+    background-color: #FAF7F7;
+
+}
+
+.login header {
+    background-color: #EA5045;
+    display: flex;
+    justify-content: center;
+    height: 12em;
+}
+
+.login img {
+    width: 50%;
+}
+
+.formgroup {
+    font-family: 'Arial';
+    text-align: center;
+    background-color: #FAF7F7;
+
+}
+
+.fb_login {
+    background-color: #FAF7F7;
+}
+
+
+
+/*-----------------------------------------------------
+                    3. Forside
+-----------------------------------------------------*/
+
+/* ikoner og tekst */
+
+figcaption {
+    font-family: 'arial';
+    color: #F58E81;
+    font-size: 15px;
+    padding: 10px;
+}
+
+figure {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* sectionwrappers der styrer grids, rows og articles */
+
+.sectionwrapper_forside {
+    display: grid;
+    background-color: #FAF7F7;
+    padding: 10px;
+    grid-template-columns: 30vw 30vw 30vw;
+    grid-template-rows: 30vw 30vw 30vw 30vw 30vw 30vw;
+    grid-gap: 10px;
+}
+
+.sectionwrapper_forside article {
+    background-color: white;
+}
+
+/* bokse med tekst */
+
+p {
+    font-family: 'arial';
+    color: #F58E81;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.box_11 p {
+    font-family: 'arial';
+    color: #F58E81;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+/* bokse */
+
+.box_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/span 2;
+    grid-row: 0/span 2;
+}
+
+.box_5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_8 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_9 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_10 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_11 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2/span 2;
+    grid-row: 4/ span 2;
+}
+
+.box_12 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_13 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_14 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*-----------------------------------------------------
+                    4. Afleveringer
+-----------------------------------------------------*/
+
+
+/* --------------------- KOLONNER --------------------- */
+
+.sectionwrapper_aflevering {
+    padding: 15px;
+}
+
+.col {
+    background-color: #F2F1F0;
+    width: 470px;
+    height: 80px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.under_col {
+    background-color: #FFFFFF;
+    width: 470px;
+    height: 80px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.hide {
+    /*  display: none; */
+}
+
+
+.col img {
+    float: right;
+}
+
+.under_col img {
+    float: right;
+
+}
+
+.collapsible {
+    cursor: pointer;
+}
+
+.content {
+    display: none;
+}
+
+/* --------------------fonte & tekst------------------- */
+
+h1 {
+    font-family: 'Gibson';
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+
+h4 {
+    font-family: 'Gibson';
+    font-size: 1em;
+    color: #EA5045;
+    padding: 20px 0px 0px 0px;
+}
+
+h5 {
+    font-family: 'Gibson';
+    font-size: 0.8em;
+    margin-block-start: 0em;
+}
+
+h6 {
+    font-family: 'Gibson';
+    font-weight: lighter;
+    margin-block-start: 0em;
+}
