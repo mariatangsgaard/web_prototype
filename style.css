@@ -22,13 +22,202 @@ body {
     margin: 0;
 }
 
+/* header */
+
+header {
+    background-color: #EA5045;
+    display: flex;
+    height: 4em;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+.logo {
+    display: flex;
+    flex-grow: 0.8;
+
+}
+
+.profil_ikon {
+    display: flex;
+
+}
+
+
+
+/*----------- Burger menu--------------- */
+
+.hidden {
+    display: none;
+}
+
+#menuknap {
+    display: flex;
+    color: white;
+    justify-content: center;
+    width: 8em;
+}
+
+#menuknapluk {
+    display: flex;
+    color: white;
+    justify-content: flex-end;
+    font-size: 1.5em;
+    padding: 3px 20px 0 0;
+}
+
+#header_right {
+    display: flex;
+    width: 7em;
+    justify-content: space-between;
+}
+
+nav a {
+    color: #F58E81;
+    font-family: 'Arial';
+    font-size: 1.7em;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 80px;
+    text-decoration: none;
+}
+
+.logud a {
+    color: white;
+    font: 'arial';
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#menu {
+    background-color: #3F3140;
+
+}
+
+#menu img {
+    padding: 2em;
+}
+
+@media only screen and (min-width: 600px) {
+
+    #menuknap {
+        display: none;
+    }
+
+    #menu.hidden {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    #menu li {
+        display: inline-block;
+    }
+}
+
+.logud {
+    background-color: #F58E81;
+    text-align: center;
+
+}
+
+
+
+/*-----------------------------------------------------
+                    2. Login side
+-----------------------------------------------------*/
+
+.login header {
+    background-color: #EA5045;
+    display: flex;
+    justify-content: center;
+    height: 10em;
+}
+
+.login img {
+    max-width: 50%;
+}
+
+.formgroup {
+    font-family: 'Arial';
+    padding-left: 1em;
+    margin-bottom: 5em;
+}
+
+.login {
+    background-color: #FAF7F7;
+    max-width: 400%;
+}
+
+input[type=text],
+input[type=submit] {
+    font-family: 'Arial';
+    border: 0px;
+    margin: 0em 9em;
+    border-radius: 70px;
+    height: 60px;
+    width: 400px;
+    margin-top: 5em;
+    color: #EA5045;
+}
+
+input[type=submit] {
+    color: white;
+}
+
+.login1 {
+    background: #EA5045;
+    color: white;
+}
+
+
+.fb_login {
+    font-family: 'Arial';
+    width: 400px;
+    height: 60px;
+    border: 1px;
+    border-radius: 70px;
+    background-color: white;
+    border: 4px;
+    text-align: center;
+    line-height: 4em;
+    position: relative;
+    bottom: 4em;
+    margin-left: 7em;
+    border: 2px #EA5045 solid;
+    color: #EA5045;
+}
+
+
+.huskmig {
+    margin-left: 6em;
+}
+
+
+.glemtpassord {
+    margin-left: 10em;
+}
+
+.formgroup:last-child {
+    font-family: 'Arial';
+    max-width: 400px;
+    margin-top: 1em;
+}
+
+input:last-child {}
+
+
+
+
 
 
 /*-----------------------------------------------------
                     3. Forside
 -----------------------------------------------------*/
-
-/* ikoner og tekst */
 
 figcaption {
     font-family: 'arial';
@@ -43,22 +232,22 @@ figure {
     justify-content: center;
 }
 
-/* sectionwrappers der styrer grids, rows og articles */
-
 .sectionwrapper_forside {
     display: grid;
-    background-color: #FAF7F7;
-    padding: 10px;
     grid-template-columns: 30vw 30vw 30vw;
     grid-template-rows: 30vw 30vw 30vw 30vw 30vw 30vw;
     grid-gap: 10px;
+    background-color: #FAF7F7;
+    padding: 10px;
+    z-index: -1;
+    position: relative;
+
 }
 
 .sectionwrapper_forside article {
     background-color: white;
 }
 
-/* bokse med tekst */
 
 p {
     font-family: 'arial';
@@ -67,14 +256,6 @@ p {
     font-weight: bold;
 }
 
-.box_11 p {
-    font-family: 'arial';
-    color: #F58E81;
-    font-size: 3em;
-    font-weight: bold;
-}
-
-/* bokse */
 
 .box_1 {
     display: flex;
@@ -108,6 +289,7 @@ p {
     justify-content: center;
     align-items: center;
 }
+
 
 .box_6 {
     display: flex;
@@ -147,6 +329,13 @@ p {
     grid-row: 4/ span 2;
 }
 
+.box_11 p {
+    font-family: 'arial';
+    color: #F58E81;
+    font-size: 3em;
+    font-weight: bold;
+}
+
 .box_12 {
     display: flex;
     justify-content: center;
@@ -164,6 +353,8 @@ p {
     justify-content: center;
     align-items: center;
 }
+
+
 
 
 /*-----------------------------------------------------

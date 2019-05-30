@@ -4,39 +4,49 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Prototype</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-
     <div class="login">
+        <header>
+            <img src="header/kea_login.svg" alt="kea">
+        </header>
+
         <div class="sectionwrapper">
-            <header>
-                <img src="header/kea_logo.svg" alt="kea_logo">
-            </header>
+
+
             <form class="loginform" action="forside.html">
                 <div class="formgroup">
-                    <label>Brugernavn</label>
+
                     <input type="text" placeholder="Indtast brugernavn">
                 </div>
                 <div class="formgroup">
-                    <label>Password</label>
-                    <input type="text" placeholder="Indtast brugernavn">
+
+                    <input type="text" placeholder="Indtast passord">
                 </div>
+
                 <div class="formgroup">
-                    <input type="submit" value="Log ind!">
+                    <input type="submit" value="Log ind!" class="login1">
                 </div>
+
             </form>
+
             <div class="fb_login">
-                <a href="https://www.facebook.com">Log in med Facebook</a>
+                <a href="https://www.facebook.com/">Log in med Facebook</a>
+            </div>
+
+            <div class="huskmig">
+                <input type="checkbox" class="huskmig"> Husk Mig </div>
+
+            <div class="glemtpassord">
+                <a href="glemtpassord.html"> Glemt Passord?</a>
             </div>
         </div>
+
     </div>
 
-
     <script src="script.js"></script>
-</body>
-
-</html>
+</body></html>
