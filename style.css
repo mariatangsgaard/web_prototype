@@ -130,6 +130,9 @@ nav {
 /*-----------------------------------------------------
                     2. Login side
 -----------------------------------------------------*/
+.login {
+    background-color: #FAF7F7;
+}
 
 .login header {
     background-color: #EA5045;
@@ -139,39 +142,38 @@ nav {
 }
 
 .login img {
-    max-width: 50%;
+    width: 25%;
 }
 
-.formgroup {
-    font-family: 'Arial';
-    padding-left: 1em;
-    margin-bottom: 5em;
+.formgroup_1 {
+    margin: 90px 0px 25px 55px;
 }
 
-.login {
-    background-color: #FAF7F7;
-    max-width: 400%;
+.formgroup_2 {
+    margin: 20px 0px 200px 55px;
 }
 
-input[type=text],
-input[type=submit] {
+.formgroup_3 {
+    margin: 0px 0px 80px 55px;
+}
+
+input[type=text] {
     font-family: 'Arial';
     border: 0px;
-    margin: 0em 9em;
     border-radius: 70px;
     height: 60px;
     width: 400px;
-    margin-top: 5em;
-    color: #EA5045;
 }
+
 
 input[type=submit] {
     color: white;
-}
-
-.login1 {
+    font-family: 'Arial';
+    border: 0px;
+    border-radius: 70px;
+    height: 60px;
+    width: 400px;
     background: #EA5045;
-    color: white;
 }
 
 
@@ -179,40 +181,50 @@ input[type=submit] {
     font-family: 'Arial';
     width: 400px;
     height: 60px;
-    border: 1px;
     border-radius: 70px;
+    border: 2px #EA5045 solid;
     background-color: white;
-    border: 4px;
     text-align: center;
-    line-height: 4em;
+    line-height: 3.5em;
     position: relative;
     bottom: 4em;
-    margin-left: 7em;
-    border: 2px #EA5045 solid;
-    color: #EA5045;
+    margin: 0px 0px 0px 55px;
 }
 
+.fb_login a {
+    color: #EA5045;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.fb_login img {
+    position: absolute;
+    width: 5%;
+    height: auto;
+    top: 17px;
+    left: 25px;
+}
 
 .huskmig {
-    margin-left: 6em;
-}
-
-
-.glemtpassord {
-    margin-left: 10em;
-}
-
-.formgroup:last-child {
     font-family: 'Arial';
-    max-width: 400px;
-    margin-top: 1em;
+    font-size: 12px;
+    color: #3F3140;
+    margin: 0px 0px 5px 180px;
 }
 
-input:last-child {}
 
+.glemtpassword {
+    font-family: 'Arial';
+    font-size: 12px;
+    color: #3F3140;
+    text-decoration: none;
+    margin: 0px 0px 0px 290px;
+}
 
-
-
+.glemtpassword a {
+    color: #3F3140;
+    text-decoration: none;
+}
 
 
 /*-----------------------------------------------------
