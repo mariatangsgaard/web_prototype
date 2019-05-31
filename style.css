@@ -22,7 +22,8 @@ body {
     margin: 0;
 }
 
-/* header */
+/*----------- HEADER--------------- */
+
 
 header {
     background-color: #EA5045;
@@ -46,7 +47,7 @@ header {
 
 
 
-/*----------- Burger menu--------------- */
+/*----------- BURGER MENU --------------- */
 
 .hidden {
     display: none;
@@ -264,6 +265,9 @@ figure {
 }
 
 
+/*----------- bokse --------------- */
+
+
 p {
     font-family: 'arial';
     color: #F58E81;
@@ -371,7 +375,6 @@ p {
 
 
 
-
 /*-----------------------------------------------------
                     4. Afleveringer
 -----------------------------------------------------*/
@@ -385,8 +388,6 @@ p {
 
 .col {
     background-color: #F2F1F0;
-    /* width: 470px; */
-    /*    height: 80px;*/
     padding: 15px;
     margin-bottom: 15px;
 }
@@ -397,10 +398,6 @@ p {
     height: 80px;
     padding: 15px;
     margin-bottom: 15px;
-}
-
-.hide {
-    /*  display: none; */
 }
 
 
