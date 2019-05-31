@@ -96,7 +96,10 @@ nav {
 
 #menu {
     background-color: #3F3140;
-
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
 
 #menu img {
@@ -382,7 +385,7 @@ p {
 
 .col {
     background-color: #F2F1F0;
-    width: 470px;
+    /* width: 470px; */
     height: 80px;
     padding: 15px;
     margin-bottom: 15px;
