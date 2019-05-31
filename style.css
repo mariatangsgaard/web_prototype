@@ -85,7 +85,7 @@ nav a {
 
 .logud a {
     color: white;
-    font: 'arial';
+    font: 'A rial';
 }
 
 nav {
@@ -254,12 +254,12 @@ figure {
     grid-gap: 10px;
     background-color: #FAF7F7;
     padding: 10px;
-    z-index: -1;
+    /*    z-index: -1;*/
     position: relative;
 
 }
 
-.sectionwrapper_forside article {
+.sectionwrapper_forside div {
     background-color: white;
 }
 
@@ -386,7 +386,7 @@ p {
 .col {
     background-color: #F2F1F0;
     /* width: 470px; */
-    height: 80px;
+    /*    height: 80px;*/
     padding: 15px;
     margin-bottom: 15px;
 }
@@ -438,13 +438,20 @@ h4 {
 }
 
 h5 {
-    font-family: 'Gibson';
+
     font-size: 0.8em;
-    margin-block-start: 0em;
+    margin-bottom: 0.6em;
 }
 
 h6 {
-    font-family: 'Gibson';
+
     font-weight: lighter;
-    margin-block-start: 0em;
+    margin-bottom: 0;
+}
+
+h5,
+h6 {
+    font-family: 'Gibson';
+    margin-top: 0;
+
 }
